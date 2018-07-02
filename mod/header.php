@@ -20,8 +20,8 @@
                             </div>
                         </li>
                         <!--<li><a href="#">Family</a></li>-->
-                        <li><a href="./transcribe/?action=load_transcribe">Transcribe</a></li>
-                        <li><a href="./about.php">About</a></li>
+                        <li><a href="../transcribe/?action=load_transcribe">Transcribe</a></li>
+                        <li><a href="../about.php">About</a></li>
                         <!--<li><a href="/contact.php">Contact</a></li>-->
                     </ul>
                 </nav>
