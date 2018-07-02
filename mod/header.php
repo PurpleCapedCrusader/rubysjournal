@@ -8,7 +8,7 @@
                         <!--<li><a href="./index.php">JournalsOld</a></li>-->
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn" onclick="journalDropdown()">Journals</button>
+                                <div class="dropbtn"<a href="../index.php">Journals</a></div>
                                 <div class="dropdown-content" id="myDropdown">
                                     <a href="../read/?action=1946-1950">1946-1950</a>
                                     <a href="../read/?action=1951-1955">1951-1955</a>
