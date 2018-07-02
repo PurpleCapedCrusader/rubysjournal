@@ -1,4 +1,5 @@
 <?php
+
 function get_entry_dates_by_journal($journal_id) {
     global $db;
     $query = 'SELECT entryDate, imageID, journalID FROM tbl_entry
@@ -52,4 +53,5 @@ function get_right_page_entries_by_image_id($image_id) {
     $statement->closeCursor();
     return $right_page_entries;
 }
+
 ?>

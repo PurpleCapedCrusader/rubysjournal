@@ -1,6 +1,6 @@
 <div id="top_bar">
-    <!--<div id="top_bar_container">-->
-        <!--<div id="top_bar_float_fix_container">-->
+    <div id="top_bar_container">
+        <div id="top_bar_float_fix_container">
             <div id="logo_container"><a href="../index.php">Ruby's Journal</a></div>
             <div id="nav_container">
                 <nav>
@@ -26,6 +26,6 @@
                     </ul>
                 </nav>
             </div>
-        <!--</div>-->
-    <!--</div>-->
+        </div>
+    </div>
 </div>

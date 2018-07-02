@@ -6,15 +6,15 @@
         <!-- display a list of categories -->
         <h2>Categories</h2>
         <nav>
-        <ul>
-        <?php foreach ($categories as $category) : ?>
-            <li>
-            <a href="?category_id=<?php echo $category['categoryID']; ?>">
-                <?php echo $category['categoryName']; ?>
-            </a>
-            </li>
-        <?php endforeach; ?>
-        </ul>
+            <ul>
+                <?php foreach ($categories as $category) : ?>
+                    <li>
+                        <a href="?category_id=<?php echo $category['categoryID']; ?>">
+                            <?php echo $category['categoryName']; ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
         </nav>
     </aside>
 
@@ -30,31 +30,31 @@
                 <th>&nbsp;</th>
             </tr>
             <?php foreach ($products as $product) : ?>
-            <tr>
-                <td><?php echo $product['productCode']; ?></td>
-                <td><?php echo $product['productName']; ?></td>
-                <td class="right"><?php echo $product['listPrice']; ?></td>
-                
-                <td><form action="." method="post">
-                    <input type="hidden" name="action"
-                           value="delete_product">
-                    <input type="hidden" name="product_id"
-                           value="<?php echo $product['productID']; ?>">
-                    <input type="hidden" name="category_id"
-                           value="<?php echo $product['categoryID']; ?>">
-                    <input type="submit" value="Delete">
-                </form></td>
-                
-                <td>
-                    <form action="edit_product_form.php" method="post">
-                    <input type="hidden" name="product_id"
-                           value="<?php echo $product['productID']; ?>">
-                    <input type="hidden" name="category_id"
-                           value="<?php echo $product['categoryID']; ?>">
-                    <input type="submit" value="Edit">
-                </form></td>
-                
-            </tr>
+                <tr>
+                    <td><?php echo $product['productCode']; ?></td>
+                    <td><?php echo $product['productName']; ?></td>
+                    <td class="right"><?php echo $product['listPrice']; ?></td>
+
+                    <td><form action="." method="post">
+                            <input type="hidden" name="action"
+                                   value="delete_product">
+                            <input type="hidden" name="product_id"
+                                   value="<?php echo $product['productID']; ?>">
+                            <input type="hidden" name="category_id"
+                                   value="<?php echo $product['categoryID']; ?>">
+                            <input type="submit" value="Delete">
+                        </form></td>
+
+                    <td>
+                        <form action="edit_product_form.php" method="post">
+                            <input type="hidden" name="product_id"
+                                   value="<?php echo $product['productID']; ?>">
+                            <input type="hidden" name="category_id"
+                                   value="<?php echo $product['categoryID']; ?>">
+                            <input type="submit" value="Edit">
+                        </form></td>
+
+                </tr>
             <?php endforeach; ?>
         </table>
         <p><a href="?action=show_add_form">Add Product</a></p>
