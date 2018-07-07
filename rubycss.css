@@ -34,7 +34,7 @@ header {
     background-size: 100%;
     background-image: linear-gradient(rgba(255,255,255,.75),
         rgba(255,255,255,0.75)), url("/images/cropped-IMG_4227-1024x269.jpg");
-    
+	
 }*/
 #top_bar {
     display: flex;
@@ -45,8 +45,8 @@ header {
     margin: auto;
     padding: 0px;
     background-size: 100%;
-    background-image: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,0.75)), url("/images/cropped-IMG_4227-1024x269.jpg");
-    
+    background-image: linear-gradient(rgba(255,255,255,.75),
+		rgba(255,255,255,0.75)), url("/images/headerBackground.jpg");
 }
 #top_bar_container {
     width: 960px;
@@ -224,8 +224,8 @@ nav li a:active {
     color: crimson;
     background-color: rgba(255,255,255,.90);
     border: 2px solid crimson;
-/*    border-radius: 8px;
-    border-bottom-right-radius: 8px;*/
+	/*    border-radius: 8px;
+		border-bottom-right-radius: 8px;*/
     border-image-slice: 20;
     border-image-source: linear-gradient(white, white, crimson, crimson, crimson);
     display: block;
@@ -531,7 +531,7 @@ footer {
     border-top: 2px solid #262626;
     background-size: 100%;
     background-image: linear-gradient(rgba(255,255,255,.75),
-        rgba(255,255,255,0.75)), url("/images/cropped-IMG_4224-1024x269.jpg");
+        rgba(255,255,255,0.75)), url("../images/footerBackground.jpg");
     text-align: center;
     font-family: 'Raleway', san-serif;
     font-weight: 300;
